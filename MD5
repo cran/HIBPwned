@@ -1,7 +1,7 @@
-2742a08e19519164bfb437bd0c0af45b *DESCRIPTION
+0e856866837c889d73a0bc698f370808 *DESCRIPTION
 87cd70f75e9b1590ac835f6cd2e54d90 *LICENSE
 161fec5ce284ad342299ea2a91977596 *NAMESPACE
-4170875f5ac88528b52e10a9ff827403 *NEWS.md
+eb366db390334fc3cee2961108d30776 *NEWS.md
 8c8530b75dd3edd97b5f65ca2600b644 *R/HIBP_headers.R
 491b9911b5f51cd1ae076853e4711f6c *R/HIBPwned-package.r
 79527ccecb56c5e3087ee494e60b982e *R/account_breaches.R
@@ -9,12 +9,12 @@ b41b8c05ec7671d94f79a1b57b8b8c00 *R/breached_site.R
 ab30109a72029ac08cf6a3e373934a1a *R/breached_sites.R
 43f993bb3299c69bd6da85f55edba0e3 *R/data_classes.R
 c0ed68e9c39c0d528ad2d46b24466150 *R/pastes.R
-d05c7015c41f4a92346595e46b1cc1fd *R/utils.R
-000ed8f350b8da18ee542d2a258bb5c9 *README.md
-8e35c395087b206df888cde8d3649b46 *build/vignette.rds
+4dac96d0ba736bc8e801b8ce0c2f50fe *R/utils.R
+05dfc88e55a786cfdf870fbbc61b46ee *README.md
+94ac836023d383224cf03779ce366a7e *build/vignette.rds
 981b6a66bb8ef062bff829c3d78243ac *inst/doc/HIBP.R
 f2b75a09a9dee860c7f4f54eabac0b2f *inst/doc/HIBP.Rmd
-4e039070ca371059d4eef12a393811c8 *inst/doc/HIBP.html
+d0bcc14d845c772aaf4310ab3a45c949 *inst/doc/HIBP.html
 56e561ab40f5dc710ebf846e8da7ed36 *man/GETcontent.Rd
 e968f0702fd39fd55ecacead019c836f *man/HIBP_headers.Rd
 e6ab8ac7abf98d771349cf848622aec8 *man/HIBPwned.Rd

@@ -12,7 +12,7 @@
 
 <meta name="author" content="Steph Locke" />
 
-<meta name="date" content="2016-05-31" />
+<meta name="date" content="2016-09-14" />
 
 <title>Have I Been Pwned? API</title>
 
@@ -70,7 +70,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <h1 class="title toc-ignore">Have I Been Pwned? API</h1>
 <h4 class="author"><em>Steph Locke</em></h4>
-<h4 class="date"><em>2016-05-31</em></h4>
+<h4 class="date"><em>2016-09-14</em></h4>
 
 
 
@@ -86,8 +86,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">breached_sites</span>(<span class="st">&quot;adobe.com&quot;</span>)</code></pre></div>
 <pre><code>##   Title  Name    Domain BreachDate            AddedDate  PwnCount
 ## 1 Adobe Adobe adobe.com 2013-10-04 2013-12-04T00:00:00Z 152445165
-##                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Description
-## 1 In October 2013, 153 million Adobe accounts were breached with each containing an internal ID, username, email, &lt;em&gt;encrypted&lt;/em&gt; password and a password hint in plain text. The password cryptography was poorly done and &lt;a href=&quot;http://stricture-group.com/files/adobe-top100.txt&quot; target=&quot;_blank&quot;&gt;many were quickly resolved back to plain text&lt;/a&gt;. The unencrypted hints also &lt;a href=&quot;http://www.troyhunt.com/2013/11/adobe-credentials-and-serious.html&quot; target=&quot;_blank&quot;&gt;disclosed much about the passwords&lt;/a&gt; adding further to the risk that hundreds of millions of Adobe customers already faced.
+##                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Description
+## 1 In October 2013, 153 million Adobe accounts were breached with each containing an internal ID, username, email, &lt;em&gt;encrypted&lt;/em&gt; password and a password hint in plain text. The password cryptography was poorly done and &lt;a href=&quot;http://stricture-group.com/files/adobe-top100.txt&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;many were quickly resolved back to plain text&lt;/a&gt;. The unencrypted hints also &lt;a href=&quot;http://www.troyhunt.com/2013/11/adobe-credentials-and-serious.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;disclosed much about the passwords&lt;/a&gt; adding further to the risk that hundreds of millions of Adobe customers already faced.
 ##                                             DataClasses IsVerified
 ## 1 Email addresses, Password hints, Passwords, Usernames       TRUE
 ##   IsSensitive IsActive IsRetired LogoType
@@ -95,8 +95,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">breached_site</span>(<span class="st">&quot;Adobe&quot;</span>)</code></pre></div>
 <pre><code>##   Title  Name    Domain BreachDate            AddedDate  PwnCount
 ## 1 Adobe Adobe adobe.com 2013-10-04 2013-12-04T00:00:00Z 152445165
-##                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Description
-## 1 In October 2013, 153 million Adobe accounts were breached with each containing an internal ID, username, email, &lt;em&gt;encrypted&lt;/em&gt; password and a password hint in plain text. The password cryptography was poorly done and &lt;a href=&quot;http://stricture-group.com/files/adobe-top100.txt&quot; target=&quot;_blank&quot;&gt;many were quickly resolved back to plain text&lt;/a&gt;. The unencrypted hints also &lt;a href=&quot;http://www.troyhunt.com/2013/11/adobe-credentials-and-serious.html&quot; target=&quot;_blank&quot;&gt;disclosed much about the passwords&lt;/a&gt; adding further to the risk that hundreds of millions of Adobe customers already faced.
+##                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Description
+## 1 In October 2013, 153 million Adobe accounts were breached with each containing an internal ID, username, email, &lt;em&gt;encrypted&lt;/em&gt; password and a password hint in plain text. The password cryptography was poorly done and &lt;a href=&quot;http://stricture-group.com/files/adobe-top100.txt&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;many were quickly resolved back to plain text&lt;/a&gt;. The unencrypted hints also &lt;a href=&quot;http://www.troyhunt.com/2013/11/adobe-credentials-and-serious.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;disclosed much about the passwords&lt;/a&gt; adding further to the risk that hundreds of millions of Adobe customers already faced.
 ##                                             DataClasses IsVerified
 ## 1 Email addresses, Password hints, Passwords, Usernames       TRUE
 ##   IsSensitive IsActive IsRetired LogoType
@@ -106,39 +106,44 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 ##  [3] &quot;Astrological signs&quot;             &quot;Avatars&quot;                       
 ##  [5] &quot;Bank account numbers&quot;           &quot;Banking PINs&quot;                  
 ##  [7] &quot;Beauty ratings&quot;                 &quot;Biometric data&quot;                
-##  [9] &quot;Car ownership statuses&quot;         &quot;Career levels&quot;                 
-## [11] &quot;Credit cards&quot;                   &quot;Customer feedback&quot;             
-## [13] &quot;Customer interactions&quot;          &quot;Dates of birth&quot;                
-## [15] &quot;Device usage tracking data&quot;     &quot;Drinking habits&quot;               
-## [17] &quot;Drug habits&quot;                    &quot;Education levels&quot;              
-## [19] &quot;Email addresses&quot;                &quot;Email messages&quot;                
-## [21] &quot;Employers&quot;                      &quot;Ethnicities&quot;                   
-## [23] &quot;Family members' names&quot;          &quot;Family plans&quot;                  
-## [25] &quot;Financial transactions&quot;         &quot;Fitness levels&quot;                
-## [27] &quot;Genders&quot;                        &quot;Geographic locations&quot;          
-## [29] &quot;Government issued IDs&quot;          &quot;Historical passwords&quot;          
-## [31] &quot;Home addresses&quot;                 &quot;Home ownership statuses&quot;       
-## [33] &quot;Homepage URLs&quot;                  &quot;Income levels&quot;                 
-## [35] &quot;Instant messenger identities&quot;   &quot;IP addresses&quot;                  
-## [37] &quot;Job titles&quot;                     &quot;MAC addresses&quot;                 
-## [39] &quot;Marital statuses&quot;               &quot;Names&quot;                         
-## [41] &quot;Nicknames&quot;                      &quot;Parenting plans&quot;               
-## [43] &quot;Passport numbers&quot;               &quot;Password hints&quot;                
-## [45] &quot;Passwords&quot;                      &quot;Payment histories&quot;             
-## [47] &quot;Personal descriptions&quot;          &quot;Personal interests&quot;            
-## [49] &quot;Phone numbers&quot;                  &quot;Physical attributes&quot;           
-## [51] &quot;Political views&quot;                &quot;Private messages&quot;              
-## [53] &quot;Purchases&quot;                      &quot;Races&quot;                         
-## [55] &quot;Recovery email addresses&quot;       &quot;Relationship statuses&quot;         
-## [57] &quot;Religions&quot;                      &quot;Reward program balances&quot;       
-## [59] &quot;Salutations&quot;                    &quot;Security questions and answers&quot;
-## [61] &quot;Sexual fetishes&quot;                &quot;Sexual orientations&quot;           
-## [63] &quot;Smoking habits&quot;                 &quot;SMS messages&quot;                  
-## [65] &quot;Social connections&quot;             &quot;Spoken languages&quot;              
-## [67] &quot;Time zones&quot;                     &quot;Travel habits&quot;                 
-## [69] &quot;User agent details&quot;             &quot;User website URLs&quot;             
-## [71] &quot;Usernames&quot;                      &quot;Website activity&quot;              
-## [73] &quot;Work habits&quot;                    &quot;Years of birth&quot;</code></pre>
+##  [9] &quot;Browser user agent details&quot;     &quot;Car ownership statuses&quot;        
+## [11] &quot;Career levels&quot;                  &quot;Chat logs&quot;                     
+## [13] &quot;Credit card CVV&quot;                &quot;Credit cards&quot;                  
+## [15] &quot;Credit status information&quot;      &quot;Customer feedback&quot;             
+## [17] &quot;Customer interactions&quot;          &quot;Dates of birth&quot;                
+## [19] &quot;Device information&quot;             &quot;Device usage tracking data&quot;    
+## [21] &quot;Drinking habits&quot;                &quot;Drug habits&quot;                   
+## [23] &quot;Education levels&quot;               &quot;Email addresses&quot;               
+## [25] &quot;Email messages&quot;                 &quot;Employers&quot;                     
+## [27] &quot;Ethnicities&quot;                    &quot;Family members' names&quot;         
+## [29] &quot;Family plans&quot;                   &quot;Family structure&quot;              
+## [31] &quot;Financial transactions&quot;         &quot;Fitness levels&quot;                
+## [33] &quot;Genders&quot;                        &quot;Geographic locations&quot;          
+## [35] &quot;Government issued IDs&quot;          &quot;Historical passwords&quot;          
+## [37] &quot;Home ownership statuses&quot;        &quot;Homepage URLs&quot;                 
+## [39] &quot;Income levels&quot;                  &quot;Instant messenger identities&quot;  
+## [41] &quot;IP addresses&quot;                   &quot;Job titles&quot;                    
+## [43] &quot;MAC addresses&quot;                  &quot;Marital statuses&quot;              
+## [45] &quot;Names&quot;                          &quot;Nicknames&quot;                     
+## [47] &quot;Parenting plans&quot;                &quot;Partial credit card data&quot;      
+## [49] &quot;Passport numbers&quot;               &quot;Password hints&quot;                
+## [51] &quot;Passwords&quot;                      &quot;Payment histories&quot;             
+## [53] &quot;Payment methods&quot;                &quot;Personal descriptions&quot;         
+## [55] &quot;Personal interests&quot;             &quot;Phone numbers&quot;                 
+## [57] &quot;Physical addresses&quot;             &quot;Physical attributes&quot;           
+## [59] &quot;Political views&quot;                &quot;Private messages&quot;              
+## [61] &quot;Purchases&quot;                      &quot;Purchasing habits&quot;             
+## [63] &quot;Races&quot;                          &quot;Recovery email addresses&quot;      
+## [65] &quot;Relationship statuses&quot;          &quot;Religions&quot;                     
+## [67] &quot;Reward program balances&quot;        &quot;Salutations&quot;                   
+## [69] &quot;Security questions and answers&quot; &quot;Sexual fetishes&quot;               
+## [71] &quot;Sexual orientations&quot;            &quot;Smoking habits&quot;                
+## [73] &quot;SMS messages&quot;                   &quot;Social connections&quot;            
+## [75] &quot;Spoken languages&quot;               &quot;Time zones&quot;                    
+## [77] &quot;Travel habits&quot;                  &quot;User statuses&quot;                 
+## [79] &quot;User website URLs&quot;              &quot;Usernames&quot;                     
+## [81] &quot;Website activity&quot;               &quot;Work habits&quot;                   
+## [83] &quot;Years of birth&quot;</code></pre>
 
 
 
