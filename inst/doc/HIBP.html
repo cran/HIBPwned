@@ -12,7 +12,7 @@
 
 <meta name="author" content="Steph Locke" />
 
-<meta name="date" content="2017-05-04" />
+<meta name="date" content="2017-05-30" />
 
 <title>Have I Been Pwned? API</title>
 
@@ -70,7 +70,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <h1 class="title toc-ignore">Have I Been Pwned? API</h1>
 <h4 class="author"><em>Steph Locke</em></h4>
-<h4 class="date"><em>2017-05-04</em></h4>
+<h4 class="date"><em>2017-05-30</em></h4>
 
 
 
@@ -84,8 +84,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 ## 1    Adobe
 ## 2 LinkedIn</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">breached_sites</span>(<span class="st">&quot;adobe.com&quot;</span>)</code></pre></div>
-<pre><code>##   Title  Name    Domain BreachDate            AddedDate  PwnCount
-## 1 Adobe Adobe adobe.com 2013-10-04 2013-12-04T00:00:00Z 152445165
+<pre><code>##   Title  Name    Domain BreachDate            AddedDate
+## 1 Adobe Adobe adobe.com 2013-10-04 2013-12-04T00:00:00Z
+##           ModifiedDate  PwnCount
+## 1 2013-12-04T00:00:00Z 152445165
 ##                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Description
 ## 1 In October 2013, 153 million Adobe accounts were breached with each containing an internal ID, username, email, &lt;em&gt;encrypted&lt;/em&gt; password and a password hint in plain text. The password cryptography was poorly done and &lt;a href=&quot;http://stricture-group.com/files/adobe-top100.txt&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;many were quickly resolved back to plain text&lt;/a&gt;. The unencrypted hints also &lt;a href=&quot;http://www.troyhunt.com/2013/11/adobe-credentials-and-serious.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;disclosed much about the passwords&lt;/a&gt; adding further to the risk that hundreds of millions of Adobe customers already faced.
 ##                                             DataClasses IsVerified
@@ -93,8 +95,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 ##   IsFabricated IsSensitive IsActive IsRetired IsSpamList LogoType
 ## 1        FALSE       FALSE     TRUE     FALSE      FALSE      svg</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">breached_site</span>(<span class="st">&quot;Adobe&quot;</span>)</code></pre></div>
-<pre><code>##   Title  Name    Domain BreachDate            AddedDate  PwnCount
-## 1 Adobe Adobe adobe.com 2013-10-04 2013-12-04T00:00:00Z 152445165
+<pre><code>##   Title  Name    Domain BreachDate            AddedDate
+## 1 Adobe Adobe adobe.com 2013-10-04 2013-12-04T00:00:00Z
+##           ModifiedDate  PwnCount
+## 1 2013-12-04T00:00:00Z 152445165
 ##                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Description
 ## 1 In October 2013, 153 million Adobe accounts were breached with each containing an internal ID, username, email, &lt;em&gt;encrypted&lt;/em&gt; password and a password hint in plain text. The password cryptography was poorly done and &lt;a href=&quot;http://stricture-group.com/files/adobe-top100.txt&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;many were quickly resolved back to plain text&lt;/a&gt;. The unencrypted hints also &lt;a href=&quot;http://www.troyhunt.com/2013/11/adobe-credentials-and-serious.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;disclosed much about the passwords&lt;/a&gt; adding further to the risk that hundreds of millions of Adobe customers already faced.
 ##                                             DataClasses IsVerified
@@ -142,11 +146,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 ## [75] &quot;Sexual fetishes&quot;                  &quot;Sexual orientations&quot;             
 ## [77] &quot;Smoking habits&quot;                   &quot;SMS messages&quot;                    
 ## [79] &quot;Social connections&quot;               &quot;Spoken languages&quot;                
-## [81] &quot;Time zones&quot;                       &quot;Travel habits&quot;                   
-## [83] &quot;User statuses&quot;                    &quot;User website URLs&quot;               
-## [85] &quot;Usernames&quot;                        &quot;Utility bills&quot;                   
-## [87] &quot;Website activity&quot;                 &quot;Work habits&quot;                     
-## [89] &quot;Years of birth&quot;                   &quot;Years of professional experience&quot;</code></pre>
+## [81] &quot;Survey results&quot;                   &quot;Time zones&quot;                      
+## [83] &quot;Travel habits&quot;                    &quot;User statuses&quot;                   
+## [85] &quot;User website URLs&quot;                &quot;Usernames&quot;                       
+## [87] &quot;Utility bills&quot;                    &quot;Website activity&quot;                
+## [89] &quot;Work habits&quot;                      &quot;Years of birth&quot;                  
+## [91] &quot;Years of professional experience&quot;</code></pre>
 
 
 
