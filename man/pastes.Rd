@@ -5,12 +5,14 @@
 \title{Search for cases where an email address has been included in
 a paste}
 \usage{
-pastes(emails, ...)
+pastes(emails, verbose = TRUE, agent = NULL)
 }
 \arguments{
 \item{emails}{A character vector of email addresses}
 
-\item{...}{Optional passthrough to HIBP_headers()}
+\item{verbose}{whether to message about http errors and re-tries}
+
+\item{agent}{agent to be used as header in calls, by default "HIBPwned R pkg". # nolint}
 }
 \value{
 List of data.frames containing results
@@ -18,6 +20,12 @@ List of data.frames containing results
 \description{
 Search for cases where an email address has been included in
 a paste
+}
+\details{
+According to the API docs
+(\url{https://haveibeenpwned.com/FAQs#Pastes}),
+"A "paste" is information that has been "pasted" to a publicly facing website
+ designed to share content such as Pastebin."
 }
 \examples{
 pastes(c("steff.sullivan@gmail.com","stephanie.g.locke@gmail.com"))
